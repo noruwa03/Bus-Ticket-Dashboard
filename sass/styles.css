@@ -1,0 +1,423 @@
+/* Description: Master CSS file */
+/*****************************************
+Table Of Contents:
+- Css Reset
+- Colors
+- General Styles
+- Navigation
+- Back Butto Top
+- Media Queries
+******************************************/
+/*****************************************
+
+******************************************/
+/**************************/
+/*     Css Reset     */
+/**************************/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  font-family: "DmSans";
+  list-style: none;
+}
+
+* a {
+  text-decoration: none;
+  color: #000;
+}
+
+* a:hover {
+  color: #000;
+}
+
+/**********************/
+/*     Colors     */
+/**********************/
+@font-face {
+  font-family: "Dmsans";
+  src: url("/assets/fonts/DMSans-Regular.ttf") format("truetype");
+}
+
+/**********************/
+/*   General Styles   */
+/**********************/
+/*******************/
+/*      Form       */
+/*******************/
+.form-group {
+  position: relative;
+  margin-bottom: 1.25rem;
+}
+
+.form-control-input,
+.form-control-textarea {
+  width: 100%;
+  padding-top: 0.875rem;
+  padding-bottom: 0.875rem;
+  padding-left: 1.5rem;
+  border: 1px solid #cbcbd1;
+  border-radius: 8px;
+  background-color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  -webkit-appearance: none;
+  /* removes inner shadow on form inputs on ios safari */
+}
+
+.form-control-textarea {
+  display: block;
+  height: 14rem;
+  /* used instead of html rows to normalize height between Chrome and IE/FF */
+}
+
+.form-control-input:focus,
+.form-control-textarea:focus {
+  border: 1px solid #a1a1a1;
+  outline: none;
+  /* Removes blue border on focus */
+}
+
+.form-control-input:hover,
+.form-control-textarea:hover {
+  border: 1px solid #a1a1a1;
+}
+
+.form-control-submit-button {
+  display: inline-block;
+  width: 80%;
+  height: 3.25rem;
+  border: 1px solid #059dc0;
+  border-radius: 30px;
+  background-color: #059dc0;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 0;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.form-control-submit-button:hover {
+  border: 1px solid #059dc0;
+  background-color: transparent;
+  color: #059dc0;
+}
+
+.divider {
+  height: 0.05rem;
+  margin: 0rem auto;
+  background: #e5e5e5;
+  margin: 0.4rem 0rem;
+}
+
+.navbar_menu {
+  display: none;
+}
+
+.date {
+  display: block;
+}
+
+.avatar-image {
+  display: none;
+}
+
+/* Dropdown Menu */
+/* Dropdown Menu */
+.dropdown-menu {
+  -webkit-animation: fadeDropdown 0.2s;
+          animation: fadeDropdown 0.2s;
+  /* required for the fade animation */
+  cursor: pointer;
+}
+
+@-webkit-keyframes fadeDropdown {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeDropdown {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.dropdown-menu {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  border: none;
+  background-color: #fcfafb;
+}
+
+.dropdown-item {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  color: #5e6576;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 0.875rem;
+  text-decoration: none;
+}
+
+.dropdown-item i {
+  font-size: 1.3em;
+  margin-left: 0.4rem;
+}
+
+.dropdown-item:hover {
+  background-color: #fcfafb;
+}
+
+.dropdown-divider {
+  width: 100%;
+  height: 1px;
+  margin: 0.5rem auto 0.5rem auto;
+  border: none;
+  background-color: #d1d1d1;
+}
+
+/* end of dropdown menu */
+/**********************/
+/*     Side Navbar    */
+/**********************/
+.left_hand_side {
+  width: 15%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.left_hand_side #back_btn {
+  display: none;
+}
+
+.left_hand_side ul li {
+  margin: 2rem 0;
+  position: relative;
+  z-index: 1;
+}
+
+.left_hand_side ul li:hover span {
+  position: absolute;
+  background: #059dc0;
+  width: 0.25rem;
+  height: 100%;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.left_hand_side ul li a {
+  padding: 0.45rem 1rem;
+}
+
+/**********************/
+/*  Dashboard Content */
+/**********************/
+.dashboard-content {
+  position: fixed;
+  left: 15%;
+  width: 65%;
+  height: 100%;
+  background: #f9f9f9;
+  z-index: 20;
+}
+
+.dashboard-content .welcome-bg {
+  background: #e5e5e5;
+  border-radius: 0.5rem;
+}
+
+.dashboard-content .welcome-bg p:nth-child(1) {
+  color: red;
+}
+
+.dashboard-content .company-assets {
+  border-radius: 0.5rem;
+}
+
+.dashboard-content .card {
+  border-radius: 0.5rem;
+}
+
+/**********************/
+/*  Right Side Navbar */
+/**********************/
+.right_hand_side {
+  width: 20%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.right_hand_side .avatar {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  position: relative;
+}
+
+.right_hand_side p:nth-child(2) {
+  -webkit-transform: translateY(-0.8rem);
+          transform: translateY(-0.8rem);
+}
+
+.right_hand_side .container_ {
+  height: 15rem;
+  overflow: hidden;
+}
+
+.right_hand_side .container_ .remainder-notifications i {
+  font-size: 1.1em;
+  cursor: pointer;
+  background: #f9f9f9;
+  color: red;
+  padding: 0.6rem;
+  border-radius: 0.3rem;
+}
+
+.right_hand_side .container_ .remainder-notifications span {
+  display: block;
+  color: #9999;
+}
+
+@media screen and (max-width: 1025px) {
+  /**********************/
+  /*   General Styles   */
+  /**********************/
+  .navbar_menu {
+    display: block;
+    -webkit-transform: translateY(1.2rem);
+            transform: translateY(1.2rem);
+    cursor: pointer;
+    z-index: 50;
+  }
+  .navbar_menu .icon_menu {
+    font-size: 2em;
+  }
+  .date {
+    display: none;
+  }
+  .avatar-image {
+    display: block;
+  }
+  .avatar-image .user img {
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  /**********************/
+  /*  Left Side Navbar  */
+  /**********************/
+  .left_hand_side {
+    display: none;
+  }
+  .left_hand_side #back_btn {
+    display: block;
+  }
+  .left_hand_side #back_btn i {
+    font-size: 2em;
+  }
+  .left_hand_side.active {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: #e5e5e5;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .left_hand_side.active ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .left_hand_side.active ul li {
+    margin: 2rem 0;
+    position: relative;
+    z-index: 1;
+  }
+  .left_hand_side.active ul li:hover span {
+    position: absolute;
+    background: #059dc0;
+    width: 0.25rem;
+    height: 100%;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  .left_hand_side.active ul li a {
+    padding: 0.45rem 1rem;
+  }
+  /**********************/
+  /*  Dashboard Content */
+  /**********************/
+  .dashboard-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 90%;
+    height: 100%;
+    overflow-y: auto;
+    background: white;
+  }
+  /**********************/
+  /*  Right Side Navbar */
+  /**********************/
+  .right_hand_side {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 825px) {
+  /**********************/
+  /*  Dashboard Content */
+  /**********************/
+  .dashboard-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    background: white;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

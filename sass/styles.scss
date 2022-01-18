@@ -1,0 +1,253 @@
+/* Description: Master CSS file */
+
+/*****************************************
+Table Of Contents:
+- Css Reset
+- Colors
+- General Styles
+- Navigation
+- Back Butto Top
+- Media Queries
+******************************************/
+
+/*****************************************
+
+******************************************/
+
+/**************************/
+/*     Css Reset     */
+/**************************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+
+  font-family: "DmSans";
+  list-style: none;
+
+  a {
+    text-decoration: none;
+    color: #000;
+
+    &:hover {
+      color: #000;
+    }
+  }
+}
+
+/**********************/
+/*     Colors     */
+/**********************/
+@import "colors";
+
+@font-face {
+  font-family: "Dmsans";
+
+  src: url("/assets/fonts/DMSans-Regular.ttf") format("truetype");
+}
+
+/**********************/
+/*   General Styles   */
+/**********************/
+
+@import "mixins";
+@import "login_register";
+
+
+.divider {
+  height: 0.05rem;
+  margin: 0rem auto;
+  background: $divider-bg;
+  margin: 0.4rem 0rem;
+}
+
+.navbar_menu {
+  display: none;
+}
+
+.date {
+  display: block;
+}
+
+.avatar-image {
+  display: none;
+}
+
+/* Dropdown Menu */
+
+/* Dropdown Menu */
+.dropdown-menu {
+  animation: fadeDropdown 0.2s; /* required for the fade animation */
+  cursor: pointer;
+}
+
+@keyframes fadeDropdown {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.dropdown-menu {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  border: none;
+  background-color: #fcfafb;
+}
+
+.dropdown-item {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  color: #5e6576;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 0.875rem;
+  text-decoration: none;
+
+  i {
+    font-size: 1.3em;
+    margin-left: 0.4rem;
+  }
+}
+
+.dropdown-item:hover {
+  background-color: #fcfafb;
+  // color: $secondary;
+}
+
+.dropdown-divider {
+  width: 100%;
+  height: 1px;
+  margin: 0.5rem auto 0.5rem auto;
+  border: none;
+  background-color: #d1d1d1;
+}
+/* end of dropdown menu */
+
+/**********************/
+/*     Side Navbar    */
+/**********************/
+.left_hand_side {
+  width: 15%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  // background: $divider-bg;
+
+  #back_btn {
+    display: none;
+  }
+
+  // .display-icon {
+  //   display: block;
+  // }
+
+  ul {
+    li {
+      margin: 2rem 0;
+      position: relative;
+      z-index: 1;
+      &:hover {
+        span {
+          position: absolute;
+          background: $nav-hover;
+          width: 0.25rem;
+          height: 100%;
+          bottom: 0;
+          right: 0;
+          z-index: -1;
+          transition: all 0.5s ease;
+        }
+      }
+
+      a {
+        padding: 0.45rem 1rem;
+      }
+    }
+  }
+}
+
+/**********************/
+/*  Dashboard Content */
+/**********************/
+
+.dashboard-content {
+  position: fixed;
+  left: 15%;
+  width: 65%;
+  height: 100%;
+  // margin-left: 15%;
+  // margin-right: 30%;
+  background: #f9f9f9;
+  z-index: 20;
+
+  .welcome-bg {
+    background: $divider-bg;
+    border-radius: 0.5rem;
+
+    p:nth-child(1) {
+      color: red;
+    }
+  }
+
+  .company-assets {
+    border-radius: 0.5rem;
+  }
+
+  .card {
+    border-radius: 0.5rem;
+  }
+}
+
+/**********************/
+/*  Right Side Navbar */
+/**********************/
+.right_hand_side {
+  width: 20%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  .avatar {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    position: relative;
+  }
+
+  p:nth-child(2) {
+    transform: translateY(-0.8rem);
+  }
+
+  .container_ {
+    height: 15rem;
+    // overflow-x: hidden;
+    // overflow-y: auto;
+    overflow: hidden;
+
+    .remainder-notifications {
+      i {
+        font-size: 1.1em;
+        cursor: pointer;
+        background: #f9f9f9;
+        color: red;
+        padding: 0.6rem;
+        border-radius: 0.3rem;
+      }
+      span {
+        display: block;
+        color: $gray;
+      }
+    }
+  }
+}
+
+@import "lg";
+@import "sm";
