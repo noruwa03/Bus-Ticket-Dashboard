@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookings</title>
+    <!-- Favicon  -->
+    <link rel="icon" href="/assets/images/favicon.svg" />
+    <link
+      rel="stylesheet"
+      href="/bootstrap-5.0.0-beta3-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/icons-1.7.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="/sass/styles.css" />
+    <script src="/bootstrap-5.0.0-beta3-dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <main role="role">
+      <section id="bookings">
+        <div class="booking-form">
+          <div class="row align-items-center justify-content-sm-between pt-5">
+            <div class="col-sm-6">
+              <div class="h2">Bus Ticket List</div>
+              <p class="fw-normal">All bus ticket list.</p>
+            </div>
+            <div class="col-sm-6 text-sm-end">
+              <a
+                href="add-bus-booking.html"
+                class="btn btn-o-p btn-outline-primary me-3"
+              >
+                <i class="bi bi-plus-square pe-1" style="font-size: 1.3em"></i>
+                Add Ticket
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Booking List -->
+        <div class="booking-list-container pb-5 pt-2">
+          <div class="booking-header-container">
+            <div class="col-table">
+              <div class="text-lead">Booking List</div>
+            </div>
+            <div class="row_">
+              <div class="col-table-1 header">
+                <span>Id</span>
+              </div>
+              <div class="col-table-2 header">Name</div>
+              <div class="col-table-3 header">From</div>
+              <div class="col-table-4 header">To</div>
+              <div class="col-table-5 header">Member(s)</div>
+              <div class="col-table-6 header">Date</div>
+              <div class="col-table-7 header">Action</div>
+            </div>
+          </div>
+          <div class="divider"></div>
+
+          <div class="header-subtitle-container">
+            <div class="row_">
+              <div class="col-table-1">
+                <span>9765</span>
+              </div>
+              <div class="col-table-2">
+                <div class="username">Obaseki Noruwa</div>
+              </div>
+              <div class="col-table-3 fc">San Antonio</div>
+              <div class="col-table-4 fc">Delaware</div>
+              <div class="col-table-5 fc">3</div>
+              <div class="col-table-6 fc">25/01/2022</div>
+              <div class="col-table-7">
+                <a href="" class="cta">
+                  <span>View me</span>
+                  <svg width="10px" height="8px" viewBox="0 0 13 10">
+                    <path d="M1,5 L11,5"></path>
+                    <polyline points="8 1 12 5 8 9"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="header-subtitle-container">
+            <div class="row_">
+              <div class="col-table-1">
+                <span>9765</span>
+              </div>
+              <div class="col-table-2">
+                <div class="username">Julia Walker</div>
+              </div>
+              <div class="col-table-3 fc">Califonia</div>
+              <div class="col-table-4 fc">LA</div>
+              <div class="col-table-5 fc">2</div>
+              <div class="col-table-6 fc">30/01/2022</div>
+              <div class="col-table-7">
+                <a href="" class="cta">
+                  <span>View me</span>
+                  <svg width="10px" height="8px" viewBox="0 0 13 10">
+                    <path d="M1,5 L11,5"></path>
+                    <polyline points="8 1 12 5 8 9"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
