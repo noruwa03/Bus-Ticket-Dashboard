@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+    <!-- Favicon  -->
+    <link rel="icon" href="/assets/images/favicon.svg" />
+    <link
+      rel="stylesheet"
+      href="/bootstrap-5.0.0-beta3-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/icons-1.7.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="/sass/styles.css" />
+    <script src="/bootstrap-5.0.0-beta3-dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <!-- Side navbar -->
+    <div class="left_hand_side">
+      <div class="logo-image py-4 text-center">
+        <a href="index.html"
+          ><img src="/assets/images/logo.svg" alt="alternative"
+        /></a>
+      </div>
+
+      <div class="text-center" id="back_btn">
+        <i class="bi bi-arrows-move back_btn"></i>
+      </div>
+      <!-- Text Logo - Use this if you don't have a graphic logo -->
+      <!-- <a class="navbar-brand logo-text" href="index.html">Your Site Name</a> -->
+
+      <ul>
+        <li>
+          <a href=""
+            ><i class="bi bi-collection display-icon me-2"></i> Dashboard</a
+          >
+          <span></span>
+        </li>
+        <li>
+          <a href="bookings.html"
+            ><i class="bi bi-calendar2-check display-icon me-2"></i> Bookings</a
+          >
+          <span></span>
+        </li>
+        <li>
+          <a href=""
+            ><i class="bi bi-bootstrap-reboot display-icon me-2"></i>
+            Resources</a
+          >
+          <span></span>
+        </li>
+        <li>
+          <a href="register.html"
+            ><i class="bi bi-diagram-2 display-icon me-2"></i> Login/Register</a
+          >
+          <span></span>
+        </li>
+      </ul>
+    </div>
+    <!-- end of side navbar -->
+
+    <div class="dashboard-content px-2 px-sm-4">
+      <!-- Navigation menu -->
+      <div class="navbar_menu">
+        <i class="bi bi-columns-gap menu icon_menu"></i>
+      </div>
+      <div class="row align-items-center justify-content-between py-4">
+        <div class="col-sm-5 col-4">Dashboard</div>
+        <div class="col-sm-2 col-6 text-end date">18, Jan 2021</div>
+        <div class="col-sm-3 col-4 text-end avatar-image">
+          <!-- User avatar -->
+          <div
+            class="user"
+            type="button"
+            id="dropdownMenuButton1"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <img src="/assets/images/img-1.jpg" alt="" />
+          </div>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li>
+              <a class="dropdown-item"
+                ><span class="name">Obaseki Noruwa</span></a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item"
+                ><span class="email">noruwaobaseki@gmail.com</span></a
+              >
+            </li>
+            <div class="dropdown-divider"></div>
+            <li>
+              <a class="dropdown-item"
+                >Logout <i class="bi bi-box-arrow-in-right"></i
+              ></a>
+            </li>
+          </ul>
+
+          <!-- end of user avatar -->
+        </div>
+      </div>
+
+      <!-- Booking List -->
+      <div class="booking-list-container pb-5 pt-2">
+        <div class="booking-header-container">
+          <div class="col-table">
+            <div class="text-lead">Booking List</div>
+          </div>
+          <div class="row_">
+            <div class="col-table-1 header">Name</div>
+            <div class="col-table-2 header">From</div>
+            <div class="col-table-3 header">To</div>
+            <div class="col-table-4 header">Member(s)</div>
+            <div class="col-table-5 header">Date</div>
+            <div class="col-table-6 header">Action</div>
+          </div>
+        </div>
+        <div class="divider"></div>
+
+        <div class="header-subtitle-container">
+          <div class="row_">
+            <div class="col-table-1">
+              <div class="username">Obaseki Noruwa</div>
+            </div>
+            <div class="col-table-2 fc">San Antonio</div>
+            <div class="col-table-3 fc">Delaware</div>
+            <div class="col-table-4 fc">3</div>
+            <div class="col-table-5 fc">25/01/2022</div>
+            <div class="col-table-6">
+              <a href="" class="cta">
+                <span>View me</span>
+                <svg width="10px" height="8px" viewBox="0 0 13 10">
+                  <path d="M1,5 L11,5"></path>
+                  <polyline points="8 1 12 5 8 9"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="header-subtitle-container">
+          <div class="row_">
+            <div class="col-table-1">
+              <div class="username">Julia Walker</div>
+            </div>
+            <div class="col-table-2 fc">Califonia</div>
+            <div class="col-table-3 fc">LA</div>
+            <div class="col-table-4 fc">2</div>
+            <div class="col-table-5 fc">30/01/2022</div>
+            <div class="col-table-6">
+              <a href="" class="cta">
+                <span>View me</span>
+                <svg width="10px" height="8px" viewBox="0 0 13 10">
+                  <path d="M1,5 L11,5"></path>
+                  <polyline points="8 1 12 5 8 9"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Side navbar -->
+    <div class="right_hand_side">
+      <div class="container-lg">
+        <div class="row align-items-center justify-content-between py-4">
+          <div class="col-sm-5 text-center">Logout</div>
+          <div class="col-sm-5 text-center">
+            <i
+              class="bi bi-box-arrow-in-right"
+              style="font-size: 1.1em; cursor: pointer"
+            ></i>
+          </div>
+        </div>
+
+        <div class="text-center mt-4">
+          <a href="">
+            <img src="/assets/images/img-1.jpg" class="avatar" alt=""
+          /></a>
+        </div>
+
+        <div class="role">
+          <p class="text-center mt-4 fw-bold">Obaseki Noruwa</p>
+          <p class="text-center">Admin</p>
+        </div>
+
+        <div class="row align-items-center justify-content-between pt-4 pb-2">
+          <div class="col-sm-5 text-center fw-bold">Remainders</div>
+          <div class="col-sm-5 text-center">
+            <i class="bi bi-bell" style="font-size: 1.1em; cursor: pointer"></i>
+          </div>
+        </div>
+        <div class="container_">
+          <div
+            class="row align-items-center justify-content-between py-3 remainder-notifications"
+          >
+            <div class="col-sm-2">
+              <i class="bi bi-box"></i>
+            </div>
+            <div class="col-sm-10 text-start fw-bold" style="font-size: 0.87em">
+              Dallas - Ohio trip <span class="fw-normal"> 23 Aug 2022</span>
+            </div>
+          </div>
+          <div
+            class="row align-items-center justify-content-between py-3 remainder-notifications"
+          >
+            <div class="col-sm-2">
+              <i class="bi bi-box"></i>
+            </div>
+            <div class="col-sm-10 text-start fw-bold" style="font-size: 0.87em">
+              Texas - CA trip <span class="fw-normal"> 13 Aug 2022</span>
+            </div>
+          </div>
+          <div
+            class="row align-items-center justify-content-between py-3 remainder-notifications"
+          >
+            <div class="col-sm-2">
+              <i class="bi bi-box"></i>
+            </div>
+            <div class="col-sm-10 text-start fw-bold" style="font-size: 0.87em">
+              San Antonio - Dellaware trip
+              <span class="fw-normal"> 23 Aug 2022</span>
+            </div>
+          </div>
+          <div
+            class="row align-items-center justify-content-between py-3 remainder-notifications"
+          >
+            <div class="col-sm-2">
+              <i class="bi bi-box"></i>
+            </div>
+            <div class="col-sm-10 text-start fw-bold" style="font-size: 0.87em">
+              Dallas - Ohio trip <span class="fw-normal"> 23 Aug 2022</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- App JavaScript Functions -->
+    <script src="/javascript/app.js"></script>
+  </body>
+</html>

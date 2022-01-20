@@ -117,16 +117,10 @@
   /**********************/
 
   .booking-list-container {
-
     .booking-header-container {
-
-
       .row_ {
-        
         .col-table-1 {
-   
           display: none;
-  
         }
 
         .col-table-2 {
@@ -156,13 +150,9 @@
     }
 
     .header-subtitle-container {
-  
-
       .row_ {
         .col-table-1 {
-   
           display: none;
-  
         }
 
         .col-table-2 {
@@ -187,6 +177,79 @@
 
         .col-table-7 {
           width: 15%;
+        }
+      }
+    }
+  }
+
+  /**********************/
+  /*    Content Width   */
+  /**********************/
+
+  .dashboard-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 100%;
+    overflow-y: auto;
+    background: white;
+
+    .booking-list-container {
+      .booking-header-container {
+        .row_ {
+          .col-table-1 {
+            display: none;
+          }
+
+          .col-table-2 {
+            width: 20%;
+          }
+
+          .col-table-3 {
+            width: 20%;
+          }
+
+          .col-table-4 {
+            width: 16%;
+          }
+
+          .col-table-5 {
+            width: 16%;
+          }
+
+          .col-table-6 {
+            width: 16%;
+          }
+        }
+      }
+
+      .header-subtitle-container {
+        .row_ {
+          .col-table-1 {
+            display: none;
+          }
+
+          .col-table-2 {
+            width: 20%;
+          }
+
+          .col-table-3 {
+            width: 20%;
+          }
+
+          .col-table-4 {
+            width: 16%;
+          }
+
+          .col-table-5 {
+            width: 16%;
+          }
+
+          .col-table-6 {
+            width: 16%;
+          }
         }
       }
     }
