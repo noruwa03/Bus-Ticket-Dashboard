@@ -216,6 +216,7 @@ Table Of Contents:
 }
 
 .dropdown-item:hover {
+  background-color: #fcfafb;
   color: #059dc0;
 }
 
@@ -467,7 +468,7 @@ Table Of Contents:
 /**********************/
 /*   Content Width    */
 /**********************/
-.dashboard-content {
+.content-width {
   position: fixed;
   left: 15%;
   width: 65%;
@@ -476,29 +477,29 @@ Table Of Contents:
   z-index: 20;
 }
 
-.dashboard-content .booking-list-container {
+.content-width .booking-list-container {
   width: 100%;
   margin: 0rem auto;
   font-size: 0.79em;
 }
 
-.dashboard-content .booking-list-container .booking-header-container {
+.content-width .booking-list-container .booking-header-container {
   margin: 0rem auto 0rem auto;
   padding: 1.5rem 0rem;
   background: #fff;
 }
 
-.dashboard-content .booking-list-container .booking-header-container .header {
+.content-width .booking-list-container .booking-header-container .header {
   color: #9999;
 }
 
-.dashboard-content .booking-list-container .booking-header-container .col-table .text-lead {
+.content-width .booking-list-container .booking-header-container .col-table .text-lead {
   padding-bottom: 1.5rem;
   font-weight: bold;
   font-size: 1.3em;
 }
 
-.dashboard-content .booking-list-container .booking-header-container .row_ {
+.content-width .booking-list-container .booking-header-container .row_ {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -510,34 +511,34 @@ Table Of Contents:
           justify-content: space-between;
 }
 
-.dashboard-content .booking-list-container .booking-header-container .row_ .col-table-1 {
+.content-width .booking-list-container .booking-header-container .row_ .col-table-1 {
   width: 20%;
   font-weight: bold;
   letter-spacing: 0.04em;
   color: #000;
 }
 
-.dashboard-content .booking-list-container .booking-header-container .row_ .col-table-2 {
+.content-width .booking-list-container .booking-header-container .row_ .col-table-2 {
   width: 20%;
 }
 
-.dashboard-content .booking-list-container .booking-header-container .row_ .col-table-3 {
+.content-width .booking-list-container .booking-header-container .row_ .col-table-3 {
   width: 20%;
 }
 
-.dashboard-content .booking-list-container .booking-header-container .row_ .col-table-4 {
+.content-width .booking-list-container .booking-header-container .row_ .col-table-4 {
   width: 15%;
 }
 
-.dashboard-content .booking-list-container .booking-header-container .row_ .col-table-5 {
+.content-width .booking-list-container .booking-header-container .row_ .col-table-5 {
   width: 15%;
 }
 
-.dashboard-content .booking-list-container .booking-header-container .row_ .col-table-6 {
+.content-width .booking-list-container .booking-header-container .row_ .col-table-6 {
   width: 15%;
 }
 
-.dashboard-content .booking-list-container .header-subtitle-container {
+.content-width .booking-list-container .header-subtitle-container {
   margin: 0.1rem auto 0rem auto;
   padding: 1.4rem 0rem;
   background: #fff;
@@ -546,7 +547,7 @@ Table Of Contents:
   transition: all 0.3s ease;
 }
 
-.dashboard-content .booking-list-container .header-subtitle-container:hover {
+.content-width .booking-list-container .header-subtitle-container:hover {
   background: #f9f9f9;
   -webkit-box-shadow: 0 2px 1.5px rgba(0, 0, 0, 0.034);
           box-shadow: 0 2px 1.5px rgba(0, 0, 0, 0.034);
@@ -556,7 +557,7 @@ Table Of Contents:
   border-radius: 0.55rem;
 }
 
-.dashboard-content .booking-list-container .header-subtitle-container .row_ {
+.content-width .booking-list-container .header-subtitle-container .row_ {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -568,30 +569,30 @@ Table Of Contents:
           justify-content: space-between;
 }
 
-.dashboard-content .booking-list-container .header-subtitle-container .row_ .col-table-1 {
+.content-width .booking-list-container .header-subtitle-container .row_ .col-table-1 {
   width: 20%;
   font-weight: bold;
   letter-spacing: 0.04em;
   color: #000;
 }
 
-.dashboard-content .booking-list-container .header-subtitle-container .row_ .col-table-2 {
+.content-width .booking-list-container .header-subtitle-container .row_ .col-table-2 {
   width: 20%;
 }
 
-.dashboard-content .booking-list-container .header-subtitle-container .row_ .col-table-3 {
+.content-width .booking-list-container .header-subtitle-container .row_ .col-table-3 {
   width: 20%;
 }
 
-.dashboard-content .booking-list-container .header-subtitle-container .row_ .col-table-4 {
+.content-width .booking-list-container .header-subtitle-container .row_ .col-table-4 {
   width: 15%;
 }
 
-.dashboard-content .booking-list-container .header-subtitle-container .row_ .col-table-5 {
+.content-width .booking-list-container .header-subtitle-container .row_ .col-table-5 {
   width: 15%;
 }
 
-.dashboard-content .booking-list-container .header-subtitle-container .row_ .col-table-6 {
+.content-width .booking-list-container .header-subtitle-container .row_ .col-table-6 {
   width: 15%;
 }
 
@@ -892,7 +893,7 @@ Table Of Contents:
   /**********************/
   /*    Content Width   */
   /**********************/
-  .dashboard-content {
+  .content-width {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -903,40 +904,40 @@ Table Of Contents:
     overflow-y: auto;
     background: white;
   }
-  .dashboard-content .booking-list-container .booking-header-container .row_ .col-table-1 {
+  .content-width .booking-list-container .booking-header-container .row_ .col-table-1 {
     display: none;
   }
-  .dashboard-content .booking-list-container .booking-header-container .row_ .col-table-2 {
+  .content-width .booking-list-container .booking-header-container .row_ .col-table-2 {
     width: 20%;
   }
-  .dashboard-content .booking-list-container .booking-header-container .row_ .col-table-3 {
+  .content-width .booking-list-container .booking-header-container .row_ .col-table-3 {
     width: 20%;
   }
-  .dashboard-content .booking-list-container .booking-header-container .row_ .col-table-4 {
+  .content-width .booking-list-container .booking-header-container .row_ .col-table-4 {
     width: 16%;
   }
-  .dashboard-content .booking-list-container .booking-header-container .row_ .col-table-5 {
+  .content-width .booking-list-container .booking-header-container .row_ .col-table-5 {
     width: 16%;
   }
-  .dashboard-content .booking-list-container .booking-header-container .row_ .col-table-6 {
+  .content-width .booking-list-container .booking-header-container .row_ .col-table-6 {
     width: 16%;
   }
-  .dashboard-content .booking-list-container .header-subtitle-container .row_ .col-table-1 {
+  .content-width .booking-list-container .header-subtitle-container .row_ .col-table-1 {
     display: none;
   }
-  .dashboard-content .booking-list-container .header-subtitle-container .row_ .col-table-2 {
+  .content-width .booking-list-container .header-subtitle-container .row_ .col-table-2 {
     width: 20%;
   }
-  .dashboard-content .booking-list-container .header-subtitle-container .row_ .col-table-3 {
+  .content-width .booking-list-container .header-subtitle-container .row_ .col-table-3 {
     width: 20%;
   }
-  .dashboard-content .booking-list-container .header-subtitle-container .row_ .col-table-4 {
+  .content-width .booking-list-container .header-subtitle-container .row_ .col-table-4 {
     width: 16%;
   }
-  .dashboard-content .booking-list-container .header-subtitle-container .row_ .col-table-5 {
+  .content-width .booking-list-container .header-subtitle-container .row_ .col-table-5 {
     width: 16%;
   }
-  .dashboard-content .booking-list-container .header-subtitle-container .row_ .col-table-6 {
+  .content-width .booking-list-container .header-subtitle-container .row_ .col-table-6 {
     width: 16%;
   }
 }
@@ -1004,7 +1005,7 @@ Table Of Contents:
   /**********************/
   /*    Content Width   */
   /**********************/
-  .dashboard-content {
+  .content-width {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -1014,45 +1015,45 @@ Table Of Contents:
     height: 100%;
     overflow-y: auto;
   }
-  .dashboard-content .booking-list-container .booking-header-container .row_ .col-table-1 {
+  .content-width .booking-list-container .booking-header-container .row_ .col-table-1 {
     display: block;
     width: 40%;
   }
-  .dashboard-content .booking-list-container .booking-header-container .row_ .col-table-2 {
+  .content-width .booking-list-container .booking-header-container .row_ .col-table-2 {
     display: none;
   }
-  .dashboard-content .booking-list-container .booking-header-container .row_ .col-table-3 {
+  .content-width .booking-list-container .booking-header-container .row_ .col-table-3 {
     display: none;
   }
-  .dashboard-content .booking-list-container .booking-header-container .row_ .col-table-4 {
+  .content-width .booking-list-container .booking-header-container .row_ .col-table-4 {
     display: none;
   }
-  .dashboard-content .booking-list-container .booking-header-container .row_ .col-table-5 {
+  .content-width .booking-list-container .booking-header-container .row_ .col-table-5 {
     width: 20%;
     display: block;
   }
-  .dashboard-content .booking-list-container .booking-header-container .row_ .col-table-6 {
+  .content-width .booking-list-container .booking-header-container .row_ .col-table-6 {
     width: 25%;
     display: block;
   }
-  .dashboard-content .booking-list-container .header-subtitle-container .row_ .col-table-1 {
+  .content-width .booking-list-container .header-subtitle-container .row_ .col-table-1 {
     display: block;
     width: 40%;
   }
-  .dashboard-content .booking-list-container .header-subtitle-container .row_ .col-table-2 {
+  .content-width .booking-list-container .header-subtitle-container .row_ .col-table-2 {
     display: none;
   }
-  .dashboard-content .booking-list-container .header-subtitle-container .row_ .col-table-3 {
+  .content-width .booking-list-container .header-subtitle-container .row_ .col-table-3 {
     display: none;
   }
-  .dashboard-content .booking-list-container .header-subtitle-container .row_ .col-table-4 {
+  .content-width .booking-list-container .header-subtitle-container .row_ .col-table-4 {
     display: none;
   }
-  .dashboard-content .booking-list-container .header-subtitle-container .row_ .col-table-5 {
+  .content-width .booking-list-container .header-subtitle-container .row_ .col-table-5 {
     width: 20%;
     display: block;
   }
-  .dashboard-content .booking-list-container .header-subtitle-container .row_ .col-table-6 {
+  .content-width .booking-list-container .header-subtitle-container .row_ .col-table-6 {
     width: 25%;
     display: block;
   }
@@ -1107,7 +1108,7 @@ Table Of Contents:
   /**********************/
   /*    Content Width   */
   /**********************/
-  .dashboard-content {
+  .content-width {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -1117,43 +1118,43 @@ Table Of Contents:
     height: 100%;
     overflow-y: auto;
   }
-  .dashboard-content .booking-list-container .booking-header-container .row_ .col-table-1 {
+  .content-width .booking-list-container .booking-header-container .row_ .col-table-1 {
     display: none;
   }
-  .dashboard-content .booking-list-container .booking-header-container .row_ .col-table-2 {
+  .content-width .booking-list-container .booking-header-container .row_ .col-table-2 {
     display: none;
   }
-  .dashboard-content .booking-list-container .booking-header-container .row_ .col-table-3 {
+  .content-width .booking-list-container .booking-header-container .row_ .col-table-3 {
     display: none;
   }
-  .dashboard-content .booking-list-container .booking-header-container .row_ .col-table-4 {
+  .content-width .booking-list-container .booking-header-container .row_ .col-table-4 {
     display: none;
   }
-  .dashboard-content .booking-list-container .booking-header-container .row_ .col-table-5 {
+  .content-width .booking-list-container .booking-header-container .row_ .col-table-5 {
     width: 50%;
     display: block;
   }
-  .dashboard-content .booking-list-container .booking-header-container .row_ .col-table-6 {
+  .content-width .booking-list-container .booking-header-container .row_ .col-table-6 {
     width: 50%;
     display: block;
   }
-  .dashboard-content .booking-list-container .header-subtitle-container .row_ .col-table-1 {
+  .content-width .booking-list-container .header-subtitle-container .row_ .col-table-1 {
     display: none;
   }
-  .dashboard-content .booking-list-container .header-subtitle-container .row_ .col-table-2 {
+  .content-width .booking-list-container .header-subtitle-container .row_ .col-table-2 {
     display: none;
   }
-  .dashboard-content .booking-list-container .header-subtitle-container .row_ .col-table-3 {
+  .content-width .booking-list-container .header-subtitle-container .row_ .col-table-3 {
     display: none;
   }
-  .dashboard-content .booking-list-container .header-subtitle-container .row_ .col-table-4 {
+  .content-width .booking-list-container .header-subtitle-container .row_ .col-table-4 {
     display: none;
   }
-  .dashboard-content .booking-list-container .header-subtitle-container .row_ .col-table-5 {
+  .content-width .booking-list-container .header-subtitle-container .row_ .col-table-5 {
     width: 50%;
     display: block;
   }
-  .dashboard-content .booking-list-container .header-subtitle-container .row_ .col-table-6 {
+  .content-width .booking-list-container .header-subtitle-container .row_ .col-table-6 {
     width: 50%;
     display: block;
   }
