@@ -834,7 +834,7 @@ Table Of Contents:
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    width: 90%;
+    width: 100%;
     height: 100%;
     overflow-y: auto;
     background: white;
@@ -899,7 +899,7 @@ Table Of Contents:
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    width: 90%;
+    width: 100%;
     height: 100%;
     overflow-y: auto;
     background: white;
