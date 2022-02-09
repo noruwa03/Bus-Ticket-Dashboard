@@ -1,5 +1,0 @@
----
-title: Boxes
-categories:
-tags:
----

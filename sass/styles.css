@@ -125,7 +125,7 @@ Table Of Contents:
 
 .icon {
   font-size: 1.5em;
-  color: #c20a28;
+  color: #FF0000;
   background: #f9f9f9;
   padding: 0.5rem;
   border-radius: 0.4rem;
@@ -412,7 +412,7 @@ Table Of Contents:
 }
 
 .dashboard-content .welcome-bg p:nth-child(1) {
-  color: red;
+  color: #ff0000;
 }
 
 .dashboard-content .company-assets {
@@ -455,7 +455,7 @@ Table Of Contents:
   font-size: 1.1em;
   cursor: pointer;
   background: #f9f9f9;
-  color: red;
+  color: #ff0000;
   padding: 0.6rem;
   border-radius: 0.3rem;
 }
@@ -485,7 +485,7 @@ Table Of Contents:
 
 .content-width .booking-list-container .booking-header-container {
   margin: 0rem auto 0rem auto;
-  padding: 1.5rem 0rem;
+  padding: 1.5rem 0 0.4rem  0;
   background: #fff;
 }
 
@@ -597,144 +597,6 @@ Table Of Contents:
 }
 
 /**********************/
-/* Booking List style */
-/**********************/
-.booking-form {
-  width: 88%;
-  margin: 0rem auto;
-}
-
-.booking-list-container {
-  width: 88%;
-  margin: 0rem auto;
-  font-size: 0.79em;
-}
-
-.booking-list-container .booking-header-container {
-  margin: 0rem auto 0rem auto;
-  padding: 1.5rem 0rem;
-  background: #fff;
-}
-
-.booking-list-container .booking-header-container .header {
-  color: #9999;
-}
-
-.booking-list-container .booking-header-container .col-table .text-lead {
-  padding-bottom: 1.5rem;
-  font-weight: bold;
-  font-size: 1.3em;
-}
-
-.booking-list-container .booking-header-container .row_ {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.booking-list-container .booking-header-container .row_ .col-table-1 {
-  width: 7%;
-  color: #29c6d5;
-}
-
-.booking-list-container .booking-header-container .row_ .col-table-1 span {
-  margin-left: 0.5rem;
-}
-
-.booking-list-container .booking-header-container .row_ .col-table-2 {
-  width: 20%;
-}
-
-.booking-list-container .booking-header-container .row_ .col-table-3 {
-  width: 20%;
-}
-
-.booking-list-container .booking-header-container .row_ .col-table-4 {
-  width: 20%;
-}
-
-.booking-list-container .booking-header-container .row_ .col-table-5 {
-  width: 12%;
-}
-
-.booking-list-container .booking-header-container .row_ .col-table-6 {
-  width: 12%;
-}
-
-.booking-list-container .booking-header-container .row_ .col-table-7 {
-  width: 12%;
-}
-
-.booking-list-container .header-subtitle-container {
-  margin: 0.1rem auto 0rem auto;
-  padding: 1.4rem 0rem;
-  background: #fff;
-  cursor: pointer;
-}
-
-.booking-list-container .header-subtitle-container:hover {
-  background: #f9f9f9;
-  -webkit-box-shadow: 0 2px 1.5px rgba(0, 0, 0, 0.034);
-          box-shadow: 0 2px 1.5px rgba(0, 0, 0, 0.034);
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.booking-list-container .header-subtitle-container .row_ {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.booking-list-container .header-subtitle-container .row_ .col-table-1 {
-  width: 7%;
-  color: #29c6d5;
-}
-
-.booking-list-container .header-subtitle-container .row_ .col-table-1 span {
-  margin-left: 0.5rem;
-}
-
-.booking-list-container .header-subtitle-container .row_ .col-table-2 {
-  width: 20%;
-}
-
-.booking-list-container .header-subtitle-container .row_ .col-table-3 {
-  width: 20%;
-}
-
-.booking-list-container .header-subtitle-container .row_ .col-table-4 {
-  width: 20%;
-}
-
-.booking-list-container .header-subtitle-container .row_ .col-table-5 {
-  width: 12%;
-}
-
-.booking-list-container .header-subtitle-container .row_ .col-table-6 {
-  width: 12%;
-}
-
-.booking-list-container .header-subtitle-container .row_ .col-table-7 {
-  width: 12%;
-}
-
-.fc {
-  color: #9999;
-}
-
 /**********************/
 /* Mediaqueries */
 /**********************/

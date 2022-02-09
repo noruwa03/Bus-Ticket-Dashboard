@@ -299,10 +299,6 @@ Table Of Contents:
     display: none;
   }
 
-  // .display-icon {
-  //   display: block;
-  // }
-
   ul {
     li {
       margin: 2rem 0;
@@ -347,7 +343,7 @@ Table Of Contents:
     border-radius: 0.5rem;
 
     p:nth-child(1) {
-      color: red;
+      color: #ff0000;
     }
   }
 
@@ -392,7 +388,7 @@ Table Of Contents:
         font-size: 1.1em;
         cursor: pointer;
         background: #f9f9f9;
-        color: red;
+        color: #ff0000;
         padding: 0.6rem;
         border-radius: 0.3rem;
       }
@@ -410,9 +406,6 @@ Table Of Contents:
 @import "adapted-table";
 
 /**********************/
-/* Booking List style */
-/**********************/
-@import "bookings-table";
 
 /**********************/
 /* Mediaqueries */
